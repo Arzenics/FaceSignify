@@ -30,9 +30,9 @@ class ViewModelFactory(
             modelClass.isAssignableFrom(JoinClassViewModel::class.java) -> {
                 JoinClassViewModel(apiService!!, userPreference!!) as T
             }
-            modelClass.isAssignableFrom(CreateClassViewModel::class.java) -> {
-                CreateClassViewModel(userPreference!!, apiService!!) as T
-            }
+//            modelClass.isAssignableFrom(CreateClassViewModel::class.java) -> {
+//                CreateClassViewModel(userPreference!!, apiService!!) as T
+//            }
             else -> throw IllegalArgumentException("Unknown ViewModel class")
         }
     }

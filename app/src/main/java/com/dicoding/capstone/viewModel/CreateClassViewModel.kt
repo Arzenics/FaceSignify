@@ -10,7 +10,7 @@ import com.dicoding.capstone.data.service.ApiService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class CreateClassViewModel : ViewModel() {  
+class CreateClassViewModel : ViewModel() {
 
     private lateinit var userPreference: UserPreference
 

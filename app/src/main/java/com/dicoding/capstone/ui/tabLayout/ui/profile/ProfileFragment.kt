@@ -30,19 +30,19 @@ class ProfileFragment : Fragment() {
 
         setupLogoutButton()
         userPreference = UserPreference(requireContext())
-        setActionBarTitleWithUsername()
+//        setActionBarTitleWithUsername()
 
         return root
     }
 
-    private fun setActionBarTitleWithUsername() {
-        val username = userPreference.getUserName()
-        if (username != null) {
-            (activity as? AppCompatActivity)?.supportActionBar?.title = "$username"
-        } else {
-            (activity as? AppCompatActivity)?.supportActionBar?.title = "Profile"
-        }
-    }
+//    private fun setActionBarTitleWithUsername() {
+//        val username = userPreference.getUserName()
+//        if (username != null) {
+//            (activity as? AppCompatActivity)?.supportActionBar?.title = "$username"
+//        } else {
+//            (activity as? AppCompatActivity)?.supportActionBar?.title = "Profile"
+//        }
+//    }
 
     private fun setupLogoutButton() {
         binding.btnLogout.setOnClickListener {

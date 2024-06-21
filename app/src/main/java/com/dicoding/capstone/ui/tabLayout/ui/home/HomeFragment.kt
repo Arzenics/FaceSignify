@@ -36,12 +36,15 @@ class HomeFragment : Fragment() {
         val applicationContext = requireContext().applicationContext
         viewModel = ViewModelProvider(this, ViewModelFactory(applicationContext)).get(ClassViewModel::class.java)
 
-        binding.rvClass.layoutManager = LinearLayoutManager(requireContext())
+//        binding.rvClass.layoutManager = LinearLayoutManager(requireContext())
 
-        viewModel.classes.observe(viewLifecycleOwner, { classes ->
-            adapter = ClassAdapter(classes)
-            binding.rvClass.adapter = adapter
-        })
+        binding.cardView1.setOnClickListener {showAttendanceDialog() }
+        binding.cardView2.setOnClickListener {showAttendanceDialog() }
+
+//        viewModel.classes.observe(viewLifecycleOwner, { classes ->
+//            adapter = ClassAdapter(classes)
+//            binding.rvClass.adapter = adapter
+//        })
 
         viewModel.fetchClasses()
 //

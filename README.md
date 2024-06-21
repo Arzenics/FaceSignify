@@ -9,7 +9,7 @@ This app is using machine learning algorithms to analyze student attendance tren
   - (ML) M505D4KY3059 – Hendra Irawan
   - (CC) C376D4KY0301 – Muhammad Miftah Darussalam
   - (CC) C376D4KY0495 – Ary Zulkarnaen
-  - (MD) A476D4KY3415 – M Ilham Ramdai
+  - (MD) A476D4KY3415 – M Ilham Ramdani
   - (MD) A179D4KY4591 – Dharu Aulia Rahman
 
 ## 
